@@ -1,0 +1,5 @@
+@Test(expected = IllegalArgumentException.class)
+public void when0to2then3() {
+    int rsl = Count.add(0, 3);//Должно быть Count.add(0, 2)
+    assertThat(rsl, is(3));
+}
